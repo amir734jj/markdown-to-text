@@ -1,8 +1,8 @@
 class MarkDownToText {
-    /* Using lodash escape implementation: https://github.com/lodash/lodash/blob/master/escape.js */
     escapeHtml = (string) => {
         return $("<textarea/>").html(string).text();
     };
+
     blockFn = (block) => block + '\n';
     inlineFn = (text) => text;
     newlineFn = () => '\n';
